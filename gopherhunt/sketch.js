@@ -1,5 +1,7 @@
 var capture;
 
+//var img;
+
 var classroomFence;
 var inClassroom = false;
 var classroom = [
@@ -26,6 +28,10 @@ var preshouse = [
     {lat: 39.407562, lon: -76.588506},  // bottom right
     {lat: 39.407612, lon: -76.588849},  // bottom left
 ];
+
+//function preload(){
+	//img = loadImage("assets/preshouse.jpg")
+//}
 
 function setup() {
   //Create and size a canvas (w, h)
@@ -63,9 +69,9 @@ function draw(){
   }
 
   if(inPreshouse){
-  	noStroke();
-  	fill(45,125,155,90);
-  	ellipse(200,200,300,300);
+  	fill(45,150,200,90);
+    ellipse(100,100,400,400);
+  	//image(img, 100, 100, 100,100);
   }
 
 
